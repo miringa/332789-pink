@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Inga Mirsanova](https://up.htmlacademy.ru/adaptive/12/user/332789).
-* Наставник: `Неизвестно`.
+* Наставник: [Andrey Ostrovskiy](https://htmlacademy.ru/profile/grandmaus).
 
 ---
 
