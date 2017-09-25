@@ -1,12 +1,148 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+  <header class="header">
+    <a class="header__logo">
+      <img class="header__logo-img" src="http://placehold.it/150x100" width="150" height="100" alt="Pink logo">
+    </a>
+    <nav class="menu">
+      <button class="menu__burger" type="button">Открыть меню</button>
+      <div class="menu__wrapper">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Html academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-  </body>
+  <main class="main">
+    <section class="welcome">
+      <div class="welcome__background"></div>
+      <div class="welcome__button-block">
+        <a class="welcome__button-download" href="#">Скачать приложение</a>
+        <section class="welcome__icon">
+          <a class="welcome__icon-apple" href="#">Скачать для Apple</a>
+          <a class="welcome__icon-android" href="#">Скачать для Android</a>
+          <a class="welcome__icon-windows" href="#">Скачать для Windows</a>
+        </section>
+        <p class="welcome__text">
+          Доступно для iPhone, iPad, Android,
+          Windows Phone, OS X, Windows 8
+        </p>
+      </div>
+    </section>
+
+    <section class="tizer">
+      <strong class="tizer__title reclame">
+        Устали от серости мегаполиса?
+        Нам есть, что вам предложить!
+      </strong>
+    </section>
+
+    <section class="benefits">
+      <h2 class="hidden">Преимущества</h2>
+      <div class="benefits__mood">
+        <h3 class="benefits__title">Поднимает настроение</h3>
+        <p class="benefits__text">
+          Приложение позволит вам победить
+          осеннюю хандру и депрессию буквально
+          в несколько кликов!
+        </p>
+      </div>
+      <div class="benefits__world">
+        <h3 class="benefits__title">Меняет мир вокруг</h3>
+        <p class="benefits__text">
+          Приложение позволит вам победить
+          осеннюю хандру и депрессию буквально
+          в несколько кликов!
+        </p>
+      </div>
+      <div class="benefits__friends">
+        <h3 class="benefits__title">Меняет мир вокруг</h3>
+        <p class="benefits__text">
+          Приложение позволит вам победить
+          осеннюю хандру и депрессию буквально
+          в несколько кликов!
+        </p>
+      </div>
+      <div class="benefits__img"></div>
+    </section>
+
+    <section class="testimonials">
+      <h2 class="hidden">Отзывы о нас</h2>
+      <div class="testimonails__wrapper">
+        <h3 class="testimonials__author">Николай Петров</h3>
+        <blockquote class="testimonials__text">
+          «Это приложение перевернуло мой мир и позволило
+          по-новому взглянуть на привычные серые вещи!
+          А еще я познакомился со своей будущей женой
+          в комментариях к выложенной фотографии!»
+        </blockquote>
+        <div class="testimonials__toggle toggle">
+          <button class="toggle__list" type="button">1</button>
+          <button class="toggle__list" type="button">2</button>
+          <button class="toggle__list" type="button">3</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="price">
+      <h2 class="hidden">Стоимость</h2>
+      <div class="price__wrapper">
+        <strong class="price__label">Хит</strong>
+        <h4 class="price__title">Стандарт</h4>
+        <big class="price__sum">3,99 usd</big>
+        <ul class="price__list">
+          <li class="price__item">Розовый фильтр</li>
+          <li class="price__item">Смайлики</li>
+          <li class="price__item">Комментарии</li>
+        </ul>
+        <div class="price__toggle toggle">
+          <button class="toggle__list" type="button">1</button>
+          <button class="toggle__list" type="button">2</button>
+          <button class="toggle__list" type="button">3</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <h2 class="hidden">Наши контакты</h2>
+      <strong class="contacts__title reclame">
+        Остались вопросы?
+        Свяжитесь с нами!
+      </strong>
+      <div class="contacts__call">
+        <h3 class="contacts__title">Звоните:</h3>
+        <p class="contacts__phone info">+7(812)555-66-66</p>
+      </div>
+      <div class="contacts__wright">
+        <h3 class="contacts__title">Пишите:</h3>
+        <p class="contacts__email info">mail@htmlacademy.ru</p>
+      </div>
+      <div class="contacts__come">
+        <h3 class="contacts__title">Пишите:</h3>
+        <p class="contacts__address info">mail@htmlacademy.ru</p>
+      </div>
+    </section>
+
+    <section class="map"></section>
+
+  </main>
+</body>
 </html>
