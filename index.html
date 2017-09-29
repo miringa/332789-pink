@@ -37,9 +37,17 @@
       <div class="welcome__button-block">
         <a class="welcome__button-download" href="#">Скачать приложение</a>
         <section class="welcome__icon">
-          <a class="welcome__icon-apple" href="#">Скачать для Apple</a>
-          <a class="welcome__icon-android" href="#">Скачать для Android</a>
-          <a class="welcome__icon-windows" href="#">Скачать для Windows</a>
+          <ul>
+            <li>
+              <a class="welcome__icon apple" href="#">Скачать для Apple</a>
+            </li>
+            <li>
+              <a class="welcome__icon android" href="#">Скачать для Android</a>
+            </li>
+            <li>
+              <a class="welcome__icon windows" href="#">Скачать для Windows</a>
+            </li>
+          </ul>
         </section>
         <p class="welcome__text">
           Доступно для iPhone, iPad, Android,
@@ -49,7 +57,7 @@
     </section>
 
     <section class="tizer">
-      <strong class="tizer__title reclame">
+      <strong class="tizer__title">
         Устали от серости мегаполиса?
         Нам есть, что вам предложить!
       </strong>
@@ -81,19 +89,18 @@
           в несколько кликов!
         </p>
       </div>
-      <div class="benefits__img"></div>
     </section>
 
     <section class="testimonials">
       <h2 class="hidden">Отзывы о нас</h2>
       <div class="testimonails__wrapper">
         <h3 class="testimonials__author">Николай Петров</h3>
-        <blockquote class="testimonials__text">
+        <p class="testimonials__text">
           «Это приложение перевернуло мой мир и позволило
           по-новому взглянуть на привычные серые вещи!
           А еще я познакомился со своей будущей женой
           в комментариях к выложенной фотографии!»
-        </blockquote>
+        </p>
         <div class="testimonials__toggle toggle">
           <button class="toggle__list" type="button">1</button>
           <button class="toggle__list" type="button">2</button>
@@ -105,14 +112,34 @@
     <section class="price">
       <h2 class="hidden">Стоимость</h2>
       <div class="price__wrapper">
-        <strong class="price__label">Хит</strong>
+        <table border="1">
+          <tr>
+            <th >Хит</th>
+          </tr>
+          <tr>
+            <th>Стандарт</th>
+          </tr>
+          <tr>
+            <th>3,99 usd</th>
+          </tr>
+          <tr>
+            <td>Розовый фильтр</td>
+          </tr>
+          <tr>
+            <td>Смайлики</td>
+          </tr>
+          <tr>
+            <td>Комментарии</td>
+          </tr>
+        </table>
+        <!-- <strong class="price__label">Хит</strong>
         <h4 class="price__title">Стандарт</h4>
         <big class="price__sum">3,99 usd</big>
         <ul class="price__list">
           <li class="price__item">Розовый фильтр</li>
           <li class="price__item">Смайлики</li>
           <li class="price__item">Комментарии</li>
-        </ul>
+        </ul> -->
         <div class="price__toggle toggle">
           <button class="toggle__list" type="button">1</button>
           <button class="toggle__list" type="button">2</button>
@@ -129,15 +156,15 @@
       </strong>
       <div class="contacts__call">
         <h3 class="contacts__title">Звоните:</h3>
-        <p class="contacts__phone info">+7(812)555-66-66</p>
+        <a class="contacts__phone info">+7(812)555-66-66</a>
       </div>
       <div class="contacts__wright">
         <h3 class="contacts__title">Пишите:</h3>
-        <p class="contacts__email info">mail@htmlacademy.ru</p>
+        <a class="contacts__email info">mail@htmlacademy.ru</a>
       </div>
       <div class="contacts__come">
-        <h3 class="contacts__title">Пишите:</h3>
-        <p class="contacts__address info">mail@htmlacademy.ru</p>
+        <h3 class="contacts__title">Приезжайте в гости:</h3>
+        <a class="contacts__address info">ул. Большая Конюшенная, 19/8</a>
       </div>
     </section>
 

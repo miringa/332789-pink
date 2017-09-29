@@ -33,7 +33,7 @@
 
   <main class="form">
 
-    <section class="tizer">
+    <div class="tizer">
       <strong class="tizer__title reclame">
         Конкурс на самое безбашенное путешествие с Пинк
       </strong>
@@ -42,93 +42,106 @@
         ценный приз — 1000 миль на вашу бонусную карту!
         Пожалуйста, заполните форму ниже:
       </p>
-    </section>
+    </div>
 
     <section class="data">
+      <legend class="hidden">Заполните ваши данные</legend>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="data__surname">
-          <label for="surname-feild">Фамилия:</label>
-          <input type="text" name="surname" id="surname-feild" value="Укажите фамилию*">
-        </div>
-        <div class="data__name">
-          <label for="name-feild">Имя:</label>
-          <input type="text" name="name" id="name-feild" value="Введите ваше имя*">
-        </div>
-        <div class="data__patronimic">
-          <label for="patronimic-feild">Отчество:</label>
-          <input type="text" name="patronimic" id="patronimic-feild" value="Ну и отчество тоже*">
-        </div>
+        <fieldset>
+          <div class="data">
+            <label for="surname-feild">Фамилия:</label>
+            <input type="text" name="surname" id="surname-feild" value="Укажите фамилию*">
+          </div>
+          <div class="data">
+            <label for="name-feild">Имя:</label>
+            <input type="text" name="name" id="name-feild" value="Введите ваше имя*">
+          </div>
+          <div class="data">
+            <label for="patronimic-feild">Отчество:</label>
+            <input type="text" name="patronimic" id="patronimic-feild" value="Ну и отчество тоже*">
+          </div>
+        </fieldset>
 
-        <div class="data__travels">
-          <h2>Ваши безбашенные достижения в путешествии</h2>
-          <div class="data__shark">
+        <fieldset>
+          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <div class="data">
             <input type="checkbox" name="shark" id="shark-feild" checked>
             <label for="shark-feild">Сделал селфи с акулой</label>
           </div>
-          <div class="data__beach">
+          <div class="data">
             <input type="checkbox" name="beach" id="beach-feild" checked>
             <label for="beach-feild">Обгорел на пляже</label>
           </div>
-          <div class="data__chack">
+          <div class="data">
             <input type="checkbox" name="chack" id="chack-feild">
             <label for="chack-feild">Видел Чака Норриса</label>
           </div>
-          <div class="data__souvenirs">
+          <div class="data">
             <input type="checkbox" name="souvenirs" id="souvenirs-feild">
             <label for="souvenirs-feild">Накупил сувениров</label>
           </div>
-          <div class="data__tower">
+          <div class="data">
             <input type="checkbox" name="tower" id="tower-feild" checked>
             <label for="tower-feild">Удержал башню</label>
           </div>
-          <div class="data__hotel">
+          <div class="data">
             <input type="checkbox" name="hotel" id="hotel-feild">
             <label for="hotel-feild">Разгромил отель</label>
           </div>
-        </div>
+        </fieldset>
 
-        <div class="data__phone">
-          <label for="phone-feild">Номер телефона</label>
-          <input type="text" name="phone" id="phone-feild" value="Номер, пожалуйста">
-        </div>
-        <div class="data__email">
-          <label for="email-feild">Адрес почты</label>
-          <input type="text" name="email" id="email-feild" value="Введите почту">
-        </div>
+        <fieldset>
+          <div class="data">
+            <label for="phone-feild">Номер телефона</label>
+            <input type="phone" name="phone" id="phone-feild" value="Номер, пожалуйста">
+          </div>
+          <div class="data">
+            <label for="email-feild">Адрес почты</label>
+            <input type="email" name="email" id="email-feild" value="Введите почту">
+          </div>
+        </fieldset>
 
-        <div class="data__app">
-          <div class="data__ios">
+        <fieldset>
+          <div class="data">
             <input type="radio" name="app" id="ios-feild" value="ios" checked>
             <label for="ios-feild">Pink для iOS</label>
           </div>
-          <div class="data__android">
+          <div class="data">
             <input type="radio" name="app" id="android-feild" value="android">
             <label for="android-feild">Pink на Android</label>
           </div>
-          <div class="data__windows">
+          <div class="data">
             <input type="radio" name="app" id="windows-feild" value="windows">
             <label for="windows-feild">Windows Phone</label>
           </div>
-        </div>
+        </fieldset>
 
-        <div class="data__emotions">
-          <h2>Опишите свои эмоции</h2>
-          <input type="text" name="emotions" value="Можно прям в красках, не стесняясь в выражениях">
-        </div>
+        <fieldset>
+          <div class="data">
+            <legend>Опишите свои эмоции</legend>
+            <input type="text" name="emotions" value="Можно прям в красках, не стесняясь в выражениях">
+          </div>
+        </fieldset>
 
-        <input type="submit" value="Отправить форму">
+        <button type="submit">Отправить форму</button>
       </form>
       <b class="data__hint">* — обязательные поля</b>
     </section>
   </main>
 
-  <footer class="icons">
+  <footer class="page__footer">
     <a class="icons__label" href="#"></a>
-    <div class="icons__social">
-      <a class="icons__tv" href="#"></a>
-      <a class="icons__fb" href="#"></a>
-      <a class="icons__yt" href="#"></a>
-    </div>
+      <ul class="icons__social">
+        <li>
+          <a class="icons tv" href="#"></a>
+        </li>
+        <li>
+          <a class="icons fb" href="#"></a>
+        </li>
+        <li>
+          <a class="icons yt" href="#"></a>
+        </li>
+      </ul>
     <div class="icons__academy">
       <p class="icons__academy-text">Разработано</p>
       <a class="icon__academy-img"></a>
