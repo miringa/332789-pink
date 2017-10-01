@@ -45,108 +45,114 @@
     </div>
 
     <section class="data">
-      <legend class="hidden">Заполните ваши данные</legend>
+
       <form action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <div class="data">
-            <label for="surname-feild">Фамилия:</label>
-            <input type="text" name="surname" id="surname-feild" value="Укажите фамилию*">
+        <fieldset class="data__personal">
+          <legend class="hidden">Заполните ваши данные</legend>
+          <div class="data__personal-wrapper">
+            <div class="data__surname">
+              <label class="data__surname-title" for="surname-feild">Фамилия:</label>
+              <input class="data__surname-feild" type="text" name="surname" id="surname-feild" placeholder="Укажите фамилию*">
+            </div>
+            <div class="data__name">
+              <label class="data__name-title" for="name-feild">Имя:</label>
+              <input class="data__name-feild" type="text" name="name" id="name-feild" placeholder="Введите ваше имя*">
+            </div>
+            <div class="data__patronimic">
+              <label class="data__patronimic-title" for="patronimic-feild">Отчество:</label>
+              <input class="data__patronimic-feild" type="text" name="patronimic" id="patronimic-feild" placeholder="Ну и отчество тоже*">
+            </div>
           </div>
-          <div class="data">
-            <label for="name-feild">Имя:</label>
-            <input type="text" name="name" id="name-feild" value="Введите ваше имя*">
-          </div>
-          <div class="data">
-            <label for="patronimic-feild">Отчество:</label>
-            <input type="text" name="patronimic" id="patronimic-feild" value="Ну и отчество тоже*">
-          </div>
-        </fieldset>
 
-        <fieldset>
-          <legend>Ваши безбашенные достижения в путешествии</legend>
-          <div class="data">
-            <input type="checkbox" name="shark" id="shark-feild" checked>
-            <label for="shark-feild">Сделал селфи с акулой</label>
-          </div>
-          <div class="data">
-            <input type="checkbox" name="beach" id="beach-feild" checked>
-            <label for="beach-feild">Обгорел на пляже</label>
-          </div>
-          <div class="data">
-            <input type="checkbox" name="chack" id="chack-feild">
-            <label for="chack-feild">Видел Чака Норриса</label>
-          </div>
-          <div class="data">
-            <input type="checkbox" name="souvenirs" id="souvenirs-feild">
-            <label for="souvenirs-feild">Накупил сувениров</label>
-          </div>
-          <div class="data">
-            <input type="checkbox" name="tower" id="tower-feild" checked>
-            <label for="tower-feild">Удержал башню</label>
-          </div>
-          <div class="data">
-            <input type="checkbox" name="hotel" id="hotel-feild">
-            <label for="hotel-feild">Разгромил отель</label>
-          </div>
-        </fieldset>
 
-        <fieldset>
-          <div class="data">
-            <label for="phone-feild">Номер телефона</label>
-            <input type="phone" name="phone" id="phone-feild" value="Номер, пожалуйста">
+          <legend class="data__trevels">Ваши безбашенные достижения в путешествии</legend>
+          <div class="data__trevels-wrapper">
+            <div class="data__shark">
+              <input class="data__checkbox" type="checkbox" name="shark" id="shark-feild" checked>
+              <label class="data__trevels-item" for="shark-feild">Сделал селфи с акулой</label>
+            </div>
+            <div class="data__beach">
+              <input class="data__checkbox" type="checkbox" name="beach" id="beach-feild" checked>
+              <label class="data__trevels-item" for="beach-feild">Обгорел на пляже</label>
+            </div>
+            <div class="data__chack">
+              <input class="data__checkbox" type="checkbox" name="chack" id="chack-feild">
+              <label class="data__trevels-item" for="chack-feild">Видел Чака Норриса</label>
+            </div>
+            <div class="data__souvenirs">
+              <input class="data__checkbox" type="checkbox" name="souvenirs" id="souvenirs-feild">
+              <label class="data__trevels-item" for="souvenirs-feild">Накупил сувениров</label>
+            </div>
+            <div class="data__tower">
+              <input class="data__checkbox" type="checkbox" name="tower" id="tower-feild" checked>
+              <label class="data__trevels-item" for="tower-feild">Удержал башню</label>
+            </div>
+            <div class="data__hotel">
+              <input class="data__checkbox" type="checkbox" name="hotel" id="hotel-feild">
+              <label class="data__trevels-item" for="hotel-feild">Разгромил отель</label>
+            </div>
           </div>
-          <div class="data">
-            <label for="email-feild">Адрес почты</label>
-            <input type="email" name="email" id="email-feild" value="Введите почту">
-          </div>
-        </fieldset>
 
-        <fieldset>
-          <div class="data">
-            <input type="radio" name="app" id="ios-feild" value="ios" checked>
-            <label for="ios-feild">Pink для iOS</label>
+          <legend class="hidden">Ваши контакты</legend>
+          <div class="data__contacnts-wrapper">
+            <div class="data__phone">
+              <label class="data__phone-title" for="phone-feild">Номер телефона</label>
+              <input class="data__phone-feild" type="phone" name="phone" id="phone-feild" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="data__email">
+              <label class="data__email-title" for="email-feild">Адрес почты</label>
+              <input class="data__email-feild" type="email" name="email" id="email-feild" placeholder="Введите почту">
+            </div>
           </div>
-          <div class="data">
-            <input type="radio" name="app" id="android-feild" value="android">
-            <label for="android-feild">Pink на Android</label>
-          </div>
-          <div class="data">
-            <input type="radio" name="app" id="windows-feild" value="windows">
-            <label for="windows-feild">Windows Phone</label>
-          </div>
-        </fieldset>
 
-        <fieldset>
-          <div class="data">
-            <legend>Опишите свои эмоции</legend>
-            <input type="text" name="emotions" value="Можно прям в красках, не стесняясь в выражениях">
+          <legend class="data__app">С каким приложением путешествовали?</legend>
+          <div class="data__app-wrapper">
+            <div class="data__ios">
+              <input class="data__app-feild" type="radio" name="app" id="ios-feild" value="ios" checked>
+              <label class="data__app-item" for="ios-feild">Pink для iOS</label>
+            </div>
+            <div class="data__android">
+              <input class="data__app-feild" type="radio" name="app" id="android-feild" value="android">
+              <label class="data__app-item" for="android-feild">Pink на Android</label>
+            </div>
+            <div class="data__windows">
+              <input class="data__app-feild" type="radio" name="app" id="windows-feild" value="windows">
+              <label class="data__app-item" for="windows-feild">Windows Phone</label>
+            </div>
           </div>
-        </fieldset>
 
-        <button type="submit">Отправить форму</button>
-      </form>
-      <b class="data__hint">* — обязательные поля</b>
-    </section>
-  </main>
 
-  <footer class="page__footer">
-    <a class="icons__label" href="#"></a>
-      <ul class="icons__social">
+
+              <legend class="data__emotions">Опишите свои эмоции</legend>
+              <div class="data__emotions-wrapper">
+                  <input class="data__emotions-feild" type="text" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
+              </div>
+          </fieldset>
+
+          <button type="submit">Отправить форму</button>
+        </form>
+        <b class="data__hint">* — обязательные поля</b>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__label" href="#"></a>
+      <ul class="footer__social">
         <li>
-          <a class="icons tv" href="#"></a>
+          <a class="footer__social footer__social--1" href="#"></a>
         </li>
         <li>
-          <a class="icons fb" href="#"></a>
+          <a class="footer__social footer__social--2" href="#"></a>
         </li>
         <li>
-          <a class="icons yt" href="#"></a>
+          <a class="footer__social footer__social--3" href="#"></a>
         </li>
       </ul>
-    <div class="icons__academy">
-      <p class="icons__academy-text">Разработано</p>
-      <a class="icon__academy-img"></a>
-    </div>
-  </footer>
+      <div class="footer__academy">
+        <p class="footer__academy-text">Разработано</p>
+        <a class="footer__academy-img"></a>
+      </div>
+    </footer>
 
-</body>
-</html>
+  </body>
+  </html>
