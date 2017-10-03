@@ -1,12 +1,187 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+  <header class="header">
+    <a class="header__logo">
+      <img class="header__logo-img" src="http://placehold.it/150x100" width="150" height="100" alt="Pink logo">
+    </a>
+    <nav class="menu">
+      <button class="menu__toggle" type="button">Открыть меню</button>
+      <div class="menu__wrapper">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Html academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-  </body>
+  <main>
+    <section class="welcome">
+      <h1 class="welcome__title">О приложении</h1>
+      <div class="welcome__background"></div>
+      <div class="welcome__button-block">
+        <a class="welcome__button-download" href="#">Скачать приложение</a>
+        <ul class="welcome__icon-list">
+          <li class="welcome__icon-item">
+            <a class="welcome__icon-link welcome__icon-link--apple" href="#">Скачать для Apple</a>
+          </li>
+          <li class="welcome__icon-item">
+            <a class="welcome__icon-link welcome__icon-link--android" href="#">Скачать для Android</a>
+          </li>
+          <li class="welcome__icon-item">
+            <a class="welcome__icon-link welcome__icon-link--windows" href="#">Скачать для Windows</a>
+          </li>
+        </ul>
+        <p class="welcome__text">
+          Доступно для iPhone, iPad, Android,
+          Windows Phone, OS X, Windows 8
+        </p>
+      </div>
+    </section>
+
+    <section class="tizer">
+      <strong class="tizer__title">
+        Устали от серости мегаполиса?
+        Нам есть, что вам предложить!
+      </strong>
+    </section>
+
+    <section class="benefits">
+      <h2 class="benefits__title">Преимущества</h2>
+      <div class="benefits__item">
+        <h3 class="benefits__title">Поднимает настроение</h3>
+        <p class="benefits__text">
+          Приложение позволит вам победить
+          осеннюю хандру и депрессию буквально
+          в несколько кликов!
+        </p>
+      </div>
+      <div class="benefits__item">
+        <h3 class="benefits__title">Меняет мир вокруг</h3>
+        <p class="benefits__text">
+          Приложение позволит вам победить
+          осеннюю хандру и депрессию буквально
+          в несколько кликов!
+        </p>
+      </div>
+      <div class="benefits__item">
+        <h3 class="benefits__title">Заводит новых друзей</h3>
+        <p class="benefits__text">
+          Ставьте лайки, комментируйте,делитесь
+          фотографиями с друзьями и заводите новых
+        </p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2 class="testimonials__title">Отзывы о нас</h2>
+      <div class="testimonails__wrapper">
+        <h3 class="testimonials__author">Николай Петров</h3>
+        <p class="testimonials__text">
+          «Это приложение перевернуло мой мир и позволило
+          по-новому взглянуть на привычные серые вещи!
+          А еще я познакомился со своей будущей женой
+          в комментариях к выложенной фотографии!»
+        </p>
+        <ul class="testimonials__toggles">
+          <li class="testimonials__toggles-item">
+            <button class="testimonials__button testimonials__button--active" type="button">1</button>
+          </li>
+          <li class="testimonials__toggles-item">
+            <button class="testimonials__button" type="button">2</button>
+          </li>
+          <li class="testimonials__toggles-item">
+            <button class="testimonials__button" type="button">3</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="price">
+      <h2 class="price__title">Стоимость</h2>
+      <div class="price__wrapper">
+        <table class="table" border="1">
+          <thead class="table__head">
+            <tr>
+              <th class="table__head-cell"></th>
+              <th>Хит</th>
+              <th>Стандарт</th>
+              <th>3,99 usd</th>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <tr>
+              <td class="table__cell">Розовый фильтр</td>
+              <td class="table__cell">да</td>
+              <td class="table__cell">да</td>
+              <td class="table__cell">да</td>
+            </tr>
+            <tr>
+              <td class="table__cell">Смайлики</td>
+              <td class="table__cell">нет</td>
+              <td class="table__cell">да</td>
+              <td class="table__cell">да</td>
+            </tr>
+            <tr>
+              <td class="table__cell">Комментарии</td>
+              <td class="table__cell">нет</td>
+              <td class="table__cell">нет</td>
+              <td class="table__cell">да</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="price__toggles">
+          <li class="price__toggles-item">
+            <button class="price__button" type="button">1</button>
+          </li>
+          <li class="price__toggles-item">
+            <button class="price__button price__button--active" type="button">2</button>
+          </li>
+          <li class="price__toggles-item">
+            <button class="price__button" type="button">3</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <h2 class="contacts__title">Наши контакты</h2>
+      <strong class="contacts__text">
+        Остались вопросы?
+        Свяжитесь с нами!
+      </strong>
+      <div class="contacts__item">
+        <span class="contacts__item-title">Звоните:</span>
+        <a class="contacts__item-text" href="tel:+78125556666">+7(812)555-66-66</a>
+      </div>
+      <div class="contacts__item">
+        <span class="contacts__item-title">Пишите:</span>
+        <a class="contacts__item-text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <div class="contacts__item">
+        <span class="contacts__item-title">Приезжайте в гости:</span>
+        <a class="contacts__item-text">ул. Большая Конюшенная, 19/8</a>
+      </div>
+    </section>
+
+    <section class="map"></section>
+
+  </main>
+</body>
 </html>
