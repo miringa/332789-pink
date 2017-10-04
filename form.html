@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
   <header class="header">
     <a class="header__logo">
-      <img class="header__logo-img" src="http://placehold.it/150x100" width="150" height="100" alt="Pink logo">
+      <img class="header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink logo">
     </a>
     <nav class="menu">
-      <button class="menu__toggle" type="button">Открыть меню</button>
+      <button class="menu__toggle" type="button"></button>
       <div class="menu__wrapper">
         <ul class="menu__list">
           <li class="menu__item">
@@ -32,38 +33,38 @@
   </header>
 
   <main>
-    <section class="tizer">
-      <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="tizer__text">
+    <section class="teaser">
+      <h1 class="teaser__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="teaser__text">
         Поделитесь своей историей и получите шанс выиграть
         ценный приз — 1000 миль на вашу бонусную карту!
         Пожалуйста, заполните форму ниже:
       </p>
     </section>
 
-    <section class="form-wrapper">
-      <h2 class="form-wrapper__title"></h2>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+    <section class="form">
+      <h2 class="form__title"></h2>
+      <form class="form__element" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__fieldset">
           <legend class="form__fieldset-title form__fieldset-title--hidden">Заполните ваши данные</legend>
           <div class="form__wrapper form__wrapper--white">
             <div class="form__fields-wrapper">
-              <label class="form__label" for="surname-feild">Фамилия:</label>
+              <label class="form__label form__text--decoration" for="surname-feild">Фамилия:</label>
               <input class="form__input" type="text" name="surname" id="surname-feild" placeholder="Укажите фамилию*">
             </div>
             <div class="form__fields-wrapper">
-              <label class="form__label" for="name-feild">Имя:</label>
+              <label class="form__label form__text--decoration" for="name-feild">Имя:</label>
               <input class="form__input" type="text" name="name" id="name-feild" placeholder="Введите ваше имя*">
             </div>
             <div class="form__fields-wrapper">
-              <label class="form__label" for="patronimic-feild">Отчество:</label>
+              <label class="form__label form__text--decoration" for="patronimic-feild">Отчество:</label>
               <input class="form__input" type="text" name="patronimic" id="patronimic-feild" placeholder="Ну и отчество тоже*">
             </div>
           </div>
         </fieldset>
 
         <fieldset class="form__fieldset">
-          <legend class="form__fieldset-title">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="form__fieldset-title form__text--decoration">Ваши безбашенные достижения в путешествии</legend>
           <div class="form__wrapper form__wrapper--gray">
             <input class="form__checkbox" type="checkbox" name="shark" id="shark-feild" checked>
             <label class="form__trevels-item" for="shark-feild">Сделал селфи с акулой</label>
@@ -89,11 +90,11 @@
           <legend class="form__fieldset-title form__fieldset-title--hidden">Ваши контакты</legend>
           <div class="form__wrapper form__wrapper--white">
             <div class="form__fields-wrapper">
-              <label class="form__label" for="phone-field">Номер телефона</label>
+              <label class="form__label form__text--decoration" for="phone-field">Номер телефона</label>
               <input class="form__input" type="phone" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
             </div>
             <div class="form__fields-wrapper">
-              <label class="form__label" for="email-field">Адрес почты</label>
+              <label class="form__label form__text--decoration" for="email-field">Адрес почты</label>
               <input class="form__input" type="email" name="email" id="email-field" placeholder="Введите почту">
             </div>
           </div>
@@ -101,7 +102,7 @@
 
 
         <fieldset class="form__fieldset">
-          <legend class="form__fieldset-title">С каким приложением путешествовали?</legend>
+          <legend class="form__fieldset-title form__text--decoration">С каким приложением путешествовали?</legend>
           <div class="form__wrapper form__wrapper--gray">
             <input class="form__radiobutton" type="radio" name="app" id="ios-field" value="ios" checked>
             <label class="form__label" for="ios-field">Pink для iOS</label>
@@ -117,13 +118,13 @@
 
         <fieldset class="form__fieldset form__wrapper--white">
           <legend class="form__fieldset-title form__fieldset-title--hidden">Опишите свои эмоции</legend>
-          <label class="form__label" for="message">Опишите свои эмоции</label>
+          <label class="form__label form__text--decoration" for="message">Опишите свои эмоции</label>
           <textarea class="form__emotions-feild"  name="emotions" id="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
         <button class="form__button" type="submit">Отправить форму</button>
       </form>
-      <b class="form__hint">* — обязательные поля</b>
+      <b class="form__hint"><span class="form__star">*</span> — обязательные поля</b>
     </section>
   </main>
 
@@ -131,7 +132,9 @@
     <a class="footer__logo" href="#"></a>
     <ul class="footer__social">
       <li class="footer__social-item">
-        <a class="footer__social-link footer__social-link--tw" href="#">twitter</a>
+        <a class="footer__social-link footer__social-link--tw footer__hidden" href="#">
+          <img src="img/icon-twitter.svg" width="18" height="14" alt="twitter">
+        </a>
       </li>
       <li class="footer__social-item">
         <a class="footer__social-link footer__social-link--vk" href="#">vkontakte</a>
